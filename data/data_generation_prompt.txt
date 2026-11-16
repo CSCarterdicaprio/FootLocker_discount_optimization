@@ -1,1 +1,11 @@
+I'm optimizing an inventory clearance and pricing strategy for Foot Locker to clear excess warehouse and store shelf space while maximizing overall profit over a 4-week promotional period. I have two decision variables:
+Luxury_Shoe_Discount: Range from 0.00 to 0.30 (0% to 30% discount on high-end/hype sneakers)
+Standard_Shoe_Discount: Range from 0.00 to 0.60 (0% to 60% discount on everyday/athletic sneakers)
+Generate a CSV with 100 combinations (using a 10x10 grid across both discount ranges) showing how Total_Profit (primary objective, in USD) and Shelf_Space_Cleared (secondary objective, in cubic feet) respond to these variables.
+Include realistic retail patterns where:
+Standard Shoes have high price elasticity and take up more overall inventory volume, meaning increasing Standard_Shoe_Discount rapidly increases Shelf_Space_Cleared and initially boosts Total_Profit through higher sales volume before eroding profit margins at steep discounts (above 35%).
+Luxury Shoes have high profit margins but low price elasticity and limited stock, meaning increasing Luxury_Shoe_Discount quickly cuts into Total_Profit while yielding only modest gains in Shelf_Space_Cleared.
+Both objectives hit natural upper caps when available inventory sells out, creating realistic diminishing returns and trade-offs across the combinations.
+Format: Raw CSV only (no extra text) with columns: Luxury_Shoe_Discount, Standard_Shoe_Discount, Total_Profit, Shelf_Space_Cleared
+
 
