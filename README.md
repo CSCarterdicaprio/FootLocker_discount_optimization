@@ -20,3 +20,53 @@ Currently one of the problems with Foot Locker is that it has a lot of shoes tha
 - Jupyter Notebook
 
 ## Setup
+
+## Part 1: Optimization Engine (Complete ✓)
+
+### What It Does
+This optimization engine analyzes 100 possible combinations of discounting luxury and regular
+to identify the Pareto frontier of efficient solutions that balance Profit 
+vs Shelf Space.
+
+### Key Findings
+- 37% of solutions are Pareto optimal
+- 63 dominated solutions were identified and should be avoided
+- === KEY STRATEGIC POINTS ON THE PARETO FRONTIER ===
+
+1. BALANCED STRATEGY (Maximize combined objectives)
+   Decision Variables: 0.0, 0.4
+   norm_Profit: 0.8
+   norm_Space: 0.8
+   Total: 1.6
+
+2. EQUITY STRATEGY (Most equal outcomes)
+   Decision Variables: 0.0, 0.4
+   norm_Profit: 0.8
+   norm_Space: 0.8
+   Gap: 0.0
+
+3. OBJECTIVE 1 PRIORITY (Maximize first stakeholder)
+   Decision Variables: 0.0, 0.2
+   norm_Profit: 1.0
+   norm_Space: 0.3
+
+4. OBJECTIVE 2 PRIORITY (Maximize second stakeholder)
+   Decision Variables: 0.3, 0.4667
+   norm_Profit: 0.5
+   norm_Space: 1.0
+
+5. WEIGHTED STRATEGY (60% objective 1, 40% objective 2)
+   Decision Variables: 0.0, 0.4
+   norm_Profit: 0.8
+   norm_Space: 0.8
+
+### Running the Analysis
+1. Ensure you have the required packages: `pandas`, `numpy`, `matplotlib`
+2. Open `optimization_engine.ipynb`
+3. Run all cells in order
+4. Outputs will be saved to the `images/` folder
+
+### Next Steps
+Part 2 will add a constraint-aware decision agent that selects among these
+Pareto optimal solutions based on business constraints and priorities.
+
